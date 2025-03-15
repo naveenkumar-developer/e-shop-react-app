@@ -32,7 +32,7 @@ function ProductCard({ product }) {
     <>
       <div className="ProductCard" data-name={product.productName}>
         <div className="img_container">
-          <img src={product.imgUrl} alt="product card" loading="lazy" />
+          <img src={product.imgUrl} alt="product card" />
         </div>
         <div className="productCard_body">
           <h2>{`₹ ${product.productPrice}`}</h2>

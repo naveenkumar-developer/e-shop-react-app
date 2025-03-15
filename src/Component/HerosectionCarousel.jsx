@@ -46,7 +46,7 @@ function HeroSectionCarousel() {
         <div className={`NextBtn SlideBtn ${isLastSlide && "stopBtn"}`} onClick={()=>slideFunc("next")}><ChevronRightOutlinedIcon /></div>
         {slideItems.map((Sitem) => (
           <div className="SlideItem" key={Sitem.SlideItem} style={{transform: `translateX(${slidePosition}%)`}}>
-            <img src={Sitem.imgUrl} alt="slide" loading="lazy"/>
+            <img src={Sitem.imgUrl} alt="slide" />
             <div className="SlideDetails">
             <h2>{Sitem.slideItemTitle}</h2>
             <p>{Sitem.slideItemPara}</p>

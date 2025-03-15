@@ -33,7 +33,7 @@ function CategoriesBanner(){
         {
             womenCategoriesBanner.map( (bannerCard)=>(
                 <div key={bannerCard.bannerName} className={`bannerCard ${bannerCard.bannerName}`}>
-                    <img src={bannerCard.imgUrl} alt="banner card" loading="lazy"/>
+                    <img src={bannerCard.imgUrl} alt="banner card"/>
                     <div className="bannerCardDetails">
                     <h2>{bannerCard.bannerTitle}</h2>
                     <button type="button" className="shopBtn_WmenCB ">Shop Now</button>
