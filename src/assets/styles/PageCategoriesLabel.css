@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.pageCategoriesLabels{
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.pageCategoriesLabels .fashionPageLinks{
+    color: #000;
+    text-decoration: none;
+}
+.pageCategoriesLabels .fashionPageLinks:hover,
+.pageCategoriesLabels .fashionPageLinks:active{
+    color: #ffb4a2;
+    transition: all 0.4s;
+}
+.pageCategoriesLabels .fashionPageLinks.active{
+    color: #ffb4a2;
+    border-bottom: 2px solid black;
+    transition: all 0.4s;
+
+}
+.pageCategoriesLabels h2{
+    font-size: 1.3rem;
+    cursor: pointer;
+}

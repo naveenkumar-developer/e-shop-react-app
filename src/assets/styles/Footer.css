@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.footer_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    background: #e9ecef;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.footer_container h2{
+    font-size: 1.5rem;
+}
+.footer_container address .footerIcon{
+    color: #ffb4a2;
+}
+
+.footer_container address{
+    font-weight: 600;
+}
+
+.location_container, .mail_container, .phoneNumber_container{
+    display: flex;
+    gap: 10px;
+    line-height: 2;
+    align-items: center;
+}
+
+.quickLinks_container .quicklinks_container{
+    list-style: none;
+}
+
+.quickLinks_container .quicklinks_container a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.quickLinks_container .quicklinks_container a:hover{
+    color: #ffb4a2;
+    transition: all 0.4s;
+}
+
+@media screen and (width>=48rem){
+    .footer_container{
+        display: flex;
+        justify-content: space-around;
+    }
+}

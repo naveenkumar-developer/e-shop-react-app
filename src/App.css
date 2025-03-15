@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.app_container{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app_container .main{
+    flex: 1;
+}

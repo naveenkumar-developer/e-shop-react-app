@@ -1,0 +1,19 @@
+ .sideBar {
+     width: 40%;
+     height: 100dvh;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: #000;
+     z-index: 100;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding-block: 20px;
+ }
+
+ @media screen and (width>= 48rem) {
+    .sideBar{
+        display: none;
+    }
+ }

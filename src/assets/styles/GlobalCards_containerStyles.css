@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.product_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media screen and (width>=48rem) {
+    .product_container{
+        gap: 1.5rem;
+    }
+}

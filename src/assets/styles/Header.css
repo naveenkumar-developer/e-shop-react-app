@@ -1,0 +1,153 @@
+/* LABEL AND ICONS STYLES  */
+
+.header_labelsAndIcons_container{
+    display: flex;
+    justify-content: center;
+    background-color: #e9ecef;
+    padding: 10px;
+}
+
+.labels_container_header{
+    display: none;
+    column-count: 3;
+    column-gap: 10px;
+    column-width: 50px;
+    column-rule: 2px solid #333;
+}
+.labels_container_header *,
+.icons_container_header *,
+.WishlistAndCart_container *,
+.SubHeader_labels *{
+    cursor: pointer;
+}
+.WishlistAndCart_container .wishlistLink,
+.WishlistAndCart_container .cartLink{
+    color: #000;
+}
+.labels_container_header div{
+    font-weight: 600;
+}
+
+
+
+
+.icons_container_header{
+    display: flex;
+    column-gap: 10px;
+}
+
+
+/* TITLEBIG SEARCH & WISHLIST ICON & CART ICON STYLES  */
+
+.TitleForXL{
+    display: none;
+}
+.SearchAndWishlistAndCart_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchInputGroup{
+    flex: 1;
+    background: #f8f9fa;
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 450px;
+    margin-right: 10px;
+}
+
+.searchInputGroup input[type="text"]{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.WishlistAndCart_container{
+    display: flex;
+    column-gap: 15px;
+}
+.wishlistLink,
+.cartLink{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+
+.stauts{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TitleAndCategoriesBtn_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titleLink{
+    text-decoration: none;
+}
+.titleLink h1{
+    color: #000 !important;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.Title span{
+    color: #ffb4a2 !important;
+}
+
+/* SUBHEADER LABEL STYLES */
+.SubHeader_labels{
+    display: none;
+}
+
+
+
+
+
+@media screen and (width>= 48rem){
+    .header_labelsAndIcons_container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .labels_container_header{
+        display: block;
+    }
+    .TitleForXL{
+        display: block;
+    }
+    .TitleForSM{
+        display: none;
+    }
+    .categoriesBtn{
+        display: none;
+    }
+    .SubHeader_labels{
+        display: flex;
+        justify-content: space-between;
+    }
+    .SubHeader_labels div *:hover{
+        color: #ffb4a2;
+        transition: all 0.4s;
+    }
+    .SubHeader_labels .col1,
+    .SubHeader_labels .col2{
+        display: flex;
+        font-weight: 600;
+        column-gap: 20px;
+    }
+}

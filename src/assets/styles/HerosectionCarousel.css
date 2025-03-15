@@ -1,0 +1,73 @@
+.Carousel_container{
+    display: flex;
+    width: 80%;
+    min-width: 300px;
+    margin-inline: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.SlideBtn{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+.SlideBtn:hover{
+    background: #000;
+    color: #fff;
+    transition: all 0.4s;
+}
+.PrevBtn{
+    left: 10px;
+}
+.NextBtn{
+    right: 10px;
+}
+.Carousel_container .stopBtn{
+    cursor: not-allowed;
+    
+}
+.Carousel_container .SlideItem{
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.Carousel_container .SlideItem img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.SlideDetails{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px #000;
+}
+
+.Carousel_container .SlideItem h2{
+    font-size: 1.2rem;
+}
+
+.Carousel_container .SlideItem p{
+    font-size: 1rem;
+}
+
+.Carousel_container .SlideItem button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px;
+}
+

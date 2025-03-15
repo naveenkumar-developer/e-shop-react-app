@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+    /* GRID CONTAINER  */
+.womenBannerCards_container{
+    width: 100%;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,200px);
+    grid-template-areas: 
+    'c1 c1 c1 c1'
+    'c2 c2 c3 c3'
+    'c4 c4 c4 c4';
+    /* background: #ffe5ec; */
+    padding: 5px;
+}
+.bannerCard{
+    width: 100%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background: #fff;
+    border-radius: 5px;
+}
+.bannerCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+
+.bannerCardDetails{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.bannerCardDetails h2{
+    font-size: 1.3rem;
+}
+
+.bannerCardDetails .shopBtn_WmenCB{
+    color: grey;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: #edede9;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.womenBannerCards_container .categoryBanner1 img{
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.womenBannerCards_container .categoryBanner1 .bannerCardDetails h2{
+    color: #fff;
+}
+.womenBannerCards_container .categoryBanner1{
+    grid-area: c1;
+}
+.womenBannerCards_container .categoryBanner2{
+    grid-area: c2;
+    
+}
+.womenBannerCards_container .categoryBanner3{
+    grid-area: c3;
+}
+.womenBannerCards_container .categoryBanner4{
+    grid-area: c4;
+}
+
+
+@media screen and (width >=48rem) {
+    .womenBannerCards_container{
+        grid-template-areas: 
+        'c1 c1 c2 c3'
+        'c1 c1 c4 c4';
+    }
+}
+
