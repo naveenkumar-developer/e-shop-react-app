@@ -35,7 +35,7 @@ return (
       </div>
       {/* SEARCH & WISHLIST & CART  */}
       <div className="SearchAndWishlistAndCart_container mt-3">
-        <NavLink className="titleLink" to="/">
+        <NavLink className="titleLink" to="/e-shop-react-app/">
         <div className="TitleForXL">
           <h1 className="Title">
             <span>E</span>-shop
@@ -49,11 +49,11 @@ return (
           <SearchIcon />
         </div>
         <div className="WishlistAndCart_container">
-          <NavLink className="wishlistLink" to="/Wishlist">
+          <NavLink className="wishlistLink" to="/e-shop-react-app/Wishlist">
           <FavoriteBorderOutlinedIcon className='wishlistIcon_header'/>
           <span className='stauts'>{WishlistItems.length}</span>
           </NavLink>
-          <NavLink className="cartLink" to="/Cart">
+          <NavLink className="cartLink" to="/e-shop-react-app/Cart">
           <ShoppingCartOutlinedIcon  className='cartIcon_header'/>
           <span className='stauts'>{CartItems.length}</span>
           </NavLink>
@@ -61,7 +61,7 @@ return (
       </div>
       {/* TITLE AND CATEGORIES BUTTON  */}
       <div className="TitleAndCategoriesBtn_container mt-3 ">
-        <NavLink className="titleLink" to="/">
+        <NavLink className="titleLink" to="/e-shop-react-app/">
         <div className="TitleForSM">
           <h1 className="Title">
             <span>E</span>-shop

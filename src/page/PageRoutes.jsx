@@ -9,14 +9,14 @@ function PageRoutes(){
     return(
         <>
         <Routes>
-            <Route path="/" element={<Home />} >
+            <Route path="/e-shop-react-app/" element={<Home />} >
                 <Route index element={<MenFashionCard />} />
                 <Route path="menFashion" element={<MenFashionCard />} />
                 <Route path="WomenFashion" element={<WomenFashionCard />} />
                 <Route path="*" element={<h1>Not found</h1>} />
             </Route>
-            <Route path="/Cart"  element={<Cart />} />
-            <Route path="/Wishlist"  element={<Wishlist />} />
+            <Route path="/e-shop-react-app/Cart"  element={<Cart />} />
+            <Route path="/e-shop-react-app/Wishlist"  element={<Wishlist />} />
         </Routes>
         </>
     )
