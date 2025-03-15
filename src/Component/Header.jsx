@@ -35,7 +35,7 @@ return (
       </div>
       {/* SEARCH & WISHLIST & CART  */}
       <div className="SearchAndWishlistAndCart_container mt-3">
-        <NavLink className="titleLink" to="/Homepage">
+        <NavLink className="titleLink" to="/">
         <div className="TitleForXL">
           <h1 className="Title">
             <span>E</span>-shop
@@ -61,7 +61,7 @@ return (
       </div>
       {/* TITLE AND CATEGORIES BUTTON  */}
       <div className="TitleAndCategoriesBtn_container mt-3 ">
-        <NavLink className="titleLink" to="/Homepage">
+        <NavLink className="titleLink" to="/">
         <div className="TitleForSM">
           <h1 className="Title">
             <span>E</span>-shop
