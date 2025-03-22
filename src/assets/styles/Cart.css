@@ -71,6 +71,10 @@
     place-content: center;
 }
 
+.checkoutBtnLink{
+    text-decoration: none;
+    color: #fff;
+}
 .checkoutBtn {
     padding-inline: 10px;
     width: 200px;
@@ -84,3 +88,4 @@
     border-radius: 5px;
     margin-inline: auto;
 }
+

@@ -63,6 +63,7 @@
     flex: 1;
     border: none;
     outline: none;
+    background: transparent;
 }
 
 .WishlistAndCart_container{
@@ -115,7 +116,10 @@
     display: none;
 }
 
-
+.SubHeader_labels .headerLabelLinks{
+    color: #000;
+    text-decoration: none;
+}
 
 
 

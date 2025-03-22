@@ -3,25 +3,29 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import { UseCart } from "../store/Cart";
 import { UseDispatchCart } from "../store/Cart";
 import { ACTION } from "../store/Cart";
-import emptyCartLogo from "../assets/img/emptyCartLogo.jpg"
-import "../assets/styles/EmptyStatus.css"
+import emptyCartLogo from "../assets/img/emptyCartLogo.jpg";
+import { NavLink} from "react-router-dom";
+import "../assets/styles/EmptyStatus.css";
 import "../assets/styles/Cart.css";
 function Cart() {
   const ProductItems = UseCart();
-  const dispatch = UseDispatchCart()
-  const totalAmount =ProductItems.reduce( (acc, item)=> acc + item.productPrice * item.quantity, 0)
+  const dispatch = UseDispatchCart();
+  const totalAmount = ProductItems.reduce(
+    (acc, item) => acc + item.productPrice * item.quantity,
+    0
+  );
   return (
     <>
       {ProductItems.length === 0 ? (
         <div className="emptyStatus_container mt-5">
-        <div className="emptyStatusImg_container">
-            <img src={emptyCartLogo} alt="empty Cart logo" loading="lazy"/>
-        </div>
-        <div className="emptyStatus">
+          <div className="emptyStatusImg_container">
+            <img src={emptyCartLogo} alt="empty Cart logo" loading="lazy" />
+          </div>
+          <div className="emptyStatus">
             <h2>Ohhh... Your cart is empty</h2>
             <p>but it doesn't have to be</p>
+          </div>
         </div>
-    </div> 
       ) : (
         <div className="Cart_wrapper">
           <div className="cartCards_container">
@@ -37,11 +41,21 @@ function Cart() {
                   </div>
                   <div className="CartCard_footer">
                     <div className="quandity_wrapper">
-                      <div role="button" onClick={() => dispatch({ type: ACTION.DECREMENT, id: item.id })}>
+                      <div
+                        role="button"
+                        onClick={() =>
+                          dispatch({ type: ACTION.DECREMENT, id: item.id })
+                        }
+                      >
                         <RemoveIcon />
                       </div>
                       <strong>{item.quantity}</strong>
-                      <div role="button" onClick={() => dispatch({ type: ACTION.INCREMENT, id: item.id })} >
+                      <div
+                        role="button"
+                        onClick={() =>
+                          dispatch({ type: ACTION.INCREMENT, id: item.id })
+                        }
+                      >
                         <AddIcon />
                       </div>
                     </div>
@@ -53,9 +67,11 @@ function Cart() {
               </div>
             ))}
           </div>
-          <div className="checkoutBtn mt-5" role="button">
-            Checkout <span>{`₹ ${totalAmount}`}</span>
-          </div>
+          <NavLink className="checkoutBtnLink" to="/e-shop-react-app/cart/Checkout">
+            <div className="checkoutBtn mt-5" role="button">
+              Checkout <span>{`₹ ${totalAmount}`}</span>
+            </div>
+          </NavLink>
         </div>
       )}
     </>

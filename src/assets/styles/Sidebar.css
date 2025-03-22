@@ -1,16 +1,37 @@
  .sideBar {
-     width: 40%;
+     width: 50%;
      height: 100dvh;
      position: absolute;
      top: 0;
      left: 0;
-     background: #000;
+     background: #e5e5e5;
      z-index: 100;
      display: flex;
      flex-direction: column;
-     justify-content: space-between;
-     padding-block: 20px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
  }
+.sidebarTitle{
+    background: #000;
+    padding: 10px;
+    color: #fff;
+}
+.sidebarTitle span{
+    color: #ffb4a2;
+    font-size: 1.3rem;
+}
+.sideBarRow1{
+    flex: 1;
+}
+.homelabel_sidebar_container .sideBarLink, .shoplabel_sidebar_container .sideBarLink, .shopDetailslable_container .sideBarLink, .contactlabel_container .sideBarLink, .loginAndoutlabel_container .sideBarLink, .registerLabel_container .sideBarLink{
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+    font-size: 1rem;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: #000;
+
+}
 
  @media screen and (width>= 48rem) {
     .sideBar{
